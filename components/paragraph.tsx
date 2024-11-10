@@ -51,8 +51,10 @@ export default function Paragraph() {
               width={50}
               height={50}
             />
-            <h1 className="text-black text-lg font-semibold font-['Montserrat'] leading-snug">
-              United Nations International Children's Emergency Funds
+            <h1
+              className={`text-black text-lg font-semibold font-['Montserrat'] leading-snug`}
+            >
+              United Nations International Children Emergency Fund
             </h1>
           </div>
           <br />

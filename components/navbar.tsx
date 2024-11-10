@@ -113,7 +113,9 @@ export default function Navbar() {
   );
 }
 
-function MenuIcon(props: any) {
+import React from "react";
+
+function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -134,7 +136,7 @@ function MenuIcon(props: any) {
   );
 }
 
-function MountainIcon(props: any) {
+function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

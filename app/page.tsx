@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "@/components/navbar";
 import Paragraph from "@/components/paragraph";
 import Cfcu from "@/components/ui/cfcu";
