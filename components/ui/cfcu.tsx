@@ -19,7 +19,7 @@ export default function Component() {
             className="relative text-black text-lg md:text-2xl font-medium font-['Montserrat'] leading-9 pb-1 border-b-2 border-transparent transition-all duration-300 ease-in-out data-[state=active]:border-b-[#003366]"
           >
             Comments
-            <span className="absolute -top-2 -right-3 md:-top-3 md:-right-6 rounded-full px-1.5 py-0.5 md:px-2 md:py-0.5 text-[#003366] text-xs md:text-sm font-medium font-['Montserrat'] leading-5 md:leading-9">
+            <span className="absolute -top-2 -right-3 md:-top-3 md:-right-6 rounded-full px-1.5 py-0.6 md:px-2 md:py-0.5 text-[#003366] text-xs md:text-sm font-medium font-['Montserrat'] leading-5 md:leading-9">
               20
             </span>
           </TabsTrigger>
