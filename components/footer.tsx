@@ -2,23 +2,24 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div>
-      <div className="px-10 py-10 flex flex-wrap gap-5 justify-between">
-        <div className="flex flex-col gap-5 max-w-[300px]">
-          <h1 className="text-black text-[28px] font-semibold font-['Montserrat'] leading-[33.60px]">
+    <div className="bg-gray-100">
+      <div className="px-5 py-10 flex flex-wrap gap-10 justify-between">
+        {/* Subscribe Section */}
+        <div className="flex flex-col gap-5 w-full md:w-[300px]">
+          <h1 className="text-black text-2xl font-semibold font-['Montserrat']">
             Subscribe
           </h1>
-          <p className="text-neutral-700 text-2xl font-normal font-['Montserrat'] leading-9">
+          <p className="text-neutral-700 text-lg font-normal font-['Montserrat']">
             Join our newsletter to stay up to date on features and releases
           </p>
           <span>
-            <form className="flex gap-2 items-center border border-gray-300 rounded-full overflow-hidden w-fit">
+            <form className="flex gap-2 items-center border border-gray-300 rounded-full overflow-hidden w-full md:w-fit">
               <div className="p-2">
-                <Image src="mail-1.svg" alt="Mail" width={20} height={20} />
+                <Image src="/mail-1.svg" alt="Mail" width={20} height={20} />
               </div>
               <input
                 type="email"
-                className="w-[200px] p-2 outline-none border-none"
+                className="w-full md:w-[200px] p-2 outline-none border-none"
                 placeholder="Enter your email"
               />
               <button
@@ -37,60 +38,61 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-7">
-          <h1 className="text-black text-[22px] font-semibold font-['Montserrat'] leading-relaxed">
+        {/* Quick Links */}
+        <div className="flex flex-col gap-3 w-full md:w-auto">
+          <h1 className="text-black text-lg font-semibold font-['Montserrat']">
             Quick Links
           </h1>
-          <p className="text-[#333333] text-xl font-normal font-['Montserrat'] underline leading-normal">
+          <p className="text-[#333333] text-base font-normal font-['Montserrat'] underline">
             Home
           </p>
-          <p className="text-[#333333] text-xl font-normal font-['Montserrat'] underline leading-normal">
+          <p className="text-[#333333] text-base font-normal font-['Montserrat'] underline">
             About Us
           </p>
-          <p className="text-[#333333] text-xl font-normal font-['Montserrat'] underline leading-normal">
+          <p className="text-[#333333] text-base font-normal font-['Montserrat'] underline">
             Who we are
           </p>
         </div>
 
-        <div className="flex flex-col gap-7">
-          <h1 className="text-black text-[22px] font-semibold font-['Montserrat'] leading-relaxed">
+        {/* Contact Us */}
+        <div className="flex flex-col gap-3 w-full md:w-auto">
+          <h1 className="text-black text-lg font-semibold font-['Montserrat']">
             Contact Us
           </h1>
-          <p className="text-[#333333] text-xl font-normal font-['Montserrat'] underline leading-normal">
+          <p className="text-[#333333] text-base font-normal font-['Montserrat'] underline">
             refreegcorrespondence@gmail.com
           </p>
-          <p className="text-[#333333] text-xl font-normal font-['Montserrat'] underline leading-normal">
-            Phone: +234- 090-174-6760{" "}
+          <p className="text-[#333333] text-base font-normal font-['Montserrat'] underline">
+            Phone: +234- 090-174-6760
           </p>
-          <p className="text-[#333333] text-xl font-normal font-['Montserrat'] underline leading-normal">
+          <p className="text-[#333333] text-base font-normal font-['Montserrat'] underline">
             Abuja, Nigeria
           </p>
         </div>
 
-        <div className="flex flex-col gap-7">
-          <h1 className="text-black text-[22px] font-semibold font-['Montserrat'] leading-relaxed">
+        {/* Legal */}
+        <div className="flex flex-col gap-3 w-full md:w-auto">
+          <h1 className="text-black text-lg font-semibold font-['Montserrat']">
             Legal
           </h1>
-          <p className="text-[#333333] text-xl font-normal font-['Montserrat'] underline leading-normal">
+          <p className="text-[#333333] text-base font-normal font-['Montserrat'] underline">
             Privacy Policy
           </p>
-          <p className="text-[#333333] text-xl font-normal font-['Montserrat'] underline leading-normal">
+          <p className="text-[#333333] text-base font-normal font-['Montserrat'] underline">
             Terms of service
           </p>
         </div>
-        <br />
-        <hr />
-        <br />
       </div>
-      <div className="p-10">
-        <div>
+
+      {/* Footer Bottom */}
+      <div className="px-5 py-5 text-center border-t border-gray-300">
+        <p className="text-sm">
           Copyright © 2024{" "}
-          <span className="text-[#003366] text-base font-bold font-['Open Sans'] underline">
+          <span className="text-[#003366] font-bold underline">
             Eiza Innovations.
           </span>{" "}
           All Rights Reserved.
-        </div>
-        <div></div>
+        </p>
       </div>
     </div>
   );

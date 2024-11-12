@@ -6,9 +6,9 @@ export default function Crowdfunding() {
       <h1 className="text-2xl font-bold mb-10">
         We are crowdfunding at its best!
       </h1>
-      <div className="flex justify-center gap-10">
+      <div className="flex flex-col md:flex-row justify-center gap-10">
         {/** First Block */}
-        <div className="flex flex-col items-center text-center max-w-xs p-5 shadow-lg rounded-lg">
+        <div className="flex flex-col items-center max-w-xs p-5 shadow-lg rounded-lg">
           <Image src="/cf1.svg" alt="cf1" width={100} height={100} />
           <h3 className="text-lg font-semibold mt-4 mb-2">
             Transparency Through Blockchain
@@ -54,7 +54,7 @@ export default function Crowdfunding() {
         </div>
 
         {/** Third Block */}
-        <div className="flex flex-col items-center text-center max-w-xs p-5 shadow-lg rounded-lg">
+        <div className="flex flex-col items-center  max-w-xs p-5 shadow-lg rounded-lg">
           <Image src="/cf1.svg" alt="cf1" width={100} height={100} />
           <h3 className="text-lg font-semibold mt-4 mb-2">
             Transparency Through Blockchain

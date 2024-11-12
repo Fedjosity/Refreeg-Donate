@@ -3,25 +3,35 @@ import { Progress } from "@/components/ui/progress";
 
 export default function Paragraph() {
   return (
-    <div className="px-10 py-10">
+    <div className="px-4 py-6 md:px-10 md:py-10">
       <div>
-        <h1 className="text-4xl font-bold uppercase">Support flood victims</h1>
+        <h1 className="text-2xl md:text-4xl font-bold uppercase">
+          Support flood victims
+        </h1>
         <br />
-        <p className="bg-red-200 text-red-600 rounded-full px-3 py-1 inline-block">
-          This cause is of high precedence
+        <p className=" items-center gap-2 bg-[#FFEBED] text-[#E34150] rounded-full px-3 py-1 inline-flex">
+          <Image
+            src="ExclamationTriangle.svg"
+            alt="Urgent"
+            width={15}
+            height={15}
+          />
+          <span>This cause is of high precedence</span>
         </p>
       </div>
       <br />
-      <div className="flex justify-between	">
-        <div className="w-3/5	">
+      <div className="flex flex-col gap-8 md:flex-row">
+        <div className="w-full md:w-3/5">
           <Image
             src="/image1.jpg"
             alt="Flood relief"
+            layout="responsive"
             width={850}
             height={100}
+            className="rounded-lg"
           />
-          <div className="flex gap-4 mt-4">
-            <button className="border rounded-full border-black px-[10px] py-[5px] flex items-center gap-2 hover:bg-[#e6eef8] hover:border-transparent hover:underline transition-all duration-300">
+          <div className="flex gap-4 mt-4 flex-wrap">
+            <button className="border rounded-full border-black px-3 py-1 flex items-center gap-2 hover:bg-[#e6eef8] hover:border-transparent hover:underline transition-all duration-300">
               <Image
                 src="/Heart with Pulse.png"
                 alt="Healthcare"
@@ -31,10 +41,10 @@ export default function Paragraph() {
               Healthcare
             </button>
 
-            <button className="border rounded-full border-black px-[10px] py-[5px] flex items-center gap-2 hover:bg-[#e6eef8] hover:border-transparent hover:underline transition-all duration-300">
+            <button className="border rounded-full border-black px-3 py-1 flex items-center gap-2 hover:bg-[#e6eef8] hover:border-transparent hover:underline transition-all duration-300">
               <Image
                 src="/Location.png"
-                alt="Healthcare"
+                alt="Location"
                 width={20}
                 height={20}
               />
@@ -43,17 +53,16 @@ export default function Paragraph() {
           </div>
           <br />
           <hr />
-
-          <div className="inline-flex items-center gap-2">
+          <br />
+          <div className="flex items-center gap-2 flex-nowrap">
             <Image
               src="/uniceflogo.png"
               alt="UNICEF Logo"
               width={50}
               height={50}
+              className="object-contain"
             />
-            <h1
-              className={`text-black text-lg font-semibold font-['Montserrat'] leading-snug`}
-            >
+            <h1 className="text-black text-lg md:text-xl font-semibold font-['Montserrat'] leading-tight">
               United Nations International Children Emergency Fund
             </h1>
           </div>
@@ -61,24 +70,26 @@ export default function Paragraph() {
           <hr />
           <br />
           <div className="flex flex-col gap-3">
-            <h2 className="text-2xl font-bold">Paragraph 1</h2>
-            <p className="text-2xl font-normal leading-9">
+            <h2 className="text-xl md:text-2xl font-bold">Paragraph 1</h2>
+            <p className="text-base md:text-lg leading-7 md:leading-9">
               The recent floods in Maiduguri have displaced thousands of
               families, leaving them without food, shelter, and basic
               necessities. We are raising $50,000 to provide emergency relief,
               including temporary housing, medical supplies, and food. Together,
               we can help rebuild their lives.
             </p>
-            <h2 className="text-2xl font-bold">Paragraph 2</h2>
-            <p className="text-2xl font-normal leading-9">
+
+            <h2 className="text-xl md:text-2xl font-bold">Paragraph 2</h2>
+            <p className="text-base md:text-lg leading-7 md:leading-9">
               The recent floods in Maiduguri have displaced thousands of
               families, leaving them without food, shelter, and basic
               necessities. We are raising $50,000 to provide emergency relief,
               including temporary housing, medical supplies, and food. Together,
               we can help rebuild their lives.
             </p>
-            <h2 className="text-2xl font-bold">Paragraph 3</h2>
-            <p className="text-2xl font-normal leading-9">
+
+            <h2 className="text-xl md:text-2xl font-bold">Paragraph 3</h2>
+            <p className="text-base md:text-lg leading-7 md:leading-9">
               The recent floods in Maiduguri have displaced thousands of
               families, leaving them without food, shelter, and basic
               necessities. We are raising $50,000 to provide emergency relief,
@@ -88,12 +99,13 @@ export default function Paragraph() {
           </div>
           <br />
           <br />
-          <div className="flex gap-5">
-            <button className="border border-black rounded-sm px-20 py-5 flex items-center gap-2 hover:bg-black hover:text-white transition-colors duration-300">
+          <div className="flex flex-row gap-4">
+            <button className="border border-black rounded-sm px-10 py-3 md:px-20 md:py-5 flex items-center gap-2 hover:bg-black hover:text-white transition-colors duration-300">
               Share
               <Image src="/share.svg" alt="Share Icon" width={20} height={20} />
             </button>
-            <button className="px-20 py-5 rounded-sm bg-[#433e3f] text-white flex items-center gap-2 hover:bg-black transition-colors duration-300">
+
+            <button className="px-10 py-3 md:px-20 md:py-5 rounded-sm bg-[#433e3f] text-white flex items-center gap-2 hover:bg-black transition-colors duration-300">
               Donate
               <Image
                 src="/chevron-right 2.png"
@@ -105,53 +117,55 @@ export default function Paragraph() {
           </div>
         </div>
 
-        <div className="w-[38%] flex flex-col gap-10">
-          <div className=" h-fit border border-[#726c6c] p-4 rounded-md shadow-lg">
-            <div className="flex flex-col">
-              <Progress
-                value={50}
-                trackColor="bg-gray-300"
-                fillColor="bg-[#0070e0]"
-              />
-              <h1 className="text-[#0a0a0b] text-3xl font-medium font-['Montserrat'] leading-[48px]">
-                ₦24,000.00 raised
-              </h1>
-              <p className="text-gray-700 mt-2">
-                of <span className="font-bold">#2,000,000.00</span> goal
-              </p>
-            </div>
-            <br />
-            <div className="flex items-center gap-2">
-              <p className="border rounded-full border-black px-[10px] py-[5px] flex items-center gap-2 hover:bg-[#e6eef8] hover:border-transparent hover:underline transition-all duration-300">
-                2.4k Donations
-              </p>
-              <p className="border rounded-full border-black px-[10px] py-[5px] flex items-center gap-2 hover:bg-[#e6eef8] hover:border-transparent hover:underline transition-all duration-300">
-                30% Funded
-              </p>
-              <p className="border rounded-full border-black px-[10px] py-[5px] flex items-center gap-2 hover:bg-[#e6eef8] hover:border-transparent hover:underline transition-all duration-300">
-                10 days left
-              </p>
-            </div>
-            <br />
-            <div className="flex flex-col gap-3">
-              <button className="w-full justify-center border border-[#0070e0] px-20 py-5 text-2xl font-bold text-[#0070e0] rounded-md flex items-center gap-2 hover:bg-[#0070e0] hover:text-white transition-colors duration-300">
-                Share
-                <Image
-                  src="/share.svg"
-                  alt="Share Icon"
-                  width={20}
-                  height={20}
+        <div className="flex flex-col gap-4 md:w-[37%]">
+          <div className="w-full flex flex-col gap-6 md:gap-10">
+            <div className="border border-[#726c6c] p-4 rounded-md shadow-lg h-fit">
+              <div className="flex flex-col">
+                <Progress
+                  value={50}
+                  trackColor="bg-gray-300"
+                  fillColor="bg-[#0070e0]"
                 />
-              </button>
-              <button className="w-full justify-center border bg-[#2a94ff] px-20 py-5 text-2xl font-bold text-white rounded-md flex items-center gap-2 hover:bg-[#0070e0] hover:text-white transition-colors duration-300">
-                Donate
-                <Image
-                  src={"/chevron-right 2.svg"}
-                  alt="Donate icon"
-                  width={20}
-                  height={20}
-                />
-              </button>
+                <h1 className="text-[#0a0a0b] text-2xl md:text-3xl font-medium font-['Montserrat'] leading-8 md:leading-[48px]">
+                  ₦24,000.00 raised
+                </h1>
+                <p className="text-gray-700 mt-2">
+                  of <span className="font-bold">₦2,000,000.00</span> goal
+                </p>
+              </div>
+              <br />
+              <div className="flex flex-wrap gap-2 mt-4">
+                <p className="border rounded-full border-black px-4 py-2 text-sm md:px-[10px] md:py-[5px] flex items-center gap-2 hover:bg-[#e6eef8] hover:border-transparent hover:underline transition-all duration-300">
+                  2.4k Donations
+                </p>
+                <p className="border rounded-full border-black px-4 py-2 text-sm md:px-[10px] md:py-[5px] flex items-center gap-2 hover:bg-[#e6eef8] hover:border-transparent hover:underline transition-all duration-300">
+                  30% Funded
+                </p>
+                <p className="border rounded-full border-black px-4 py-2 text-sm md:px-[10px] md:py-[5px] flex items-center gap-2 hover:bg-[#e6eef8] hover:border-transparent hover:underline transition-all duration-300">
+                  10 days left
+                </p>
+              </div>
+              <br />
+              <div className="flex flex-col gap-3 mt-4">
+                <button className="w-full justify-center border border-[#0070e0] px-8 md:px-20 py-3 md:py-5 text-lg md:text-2xl font-bold text-[#0070e0] rounded-md flex items-center gap-2 hover:bg-[#0070e0] hover:text-white transition-colors duration-300">
+                  Share
+                  <Image
+                    src="/share.svg"
+                    alt="Share Icon"
+                    width={20}
+                    height={20}
+                  />
+                </button>
+                <button className="w-full justify-center border bg-[#2a94ff] px-8 md:px-20 py-3 md:py-5 text-lg md:text-2xl font-bold text-white rounded-md flex items-center gap-2 hover:bg-[#0070e0] hover:text-white transition-colors duration-300">
+                  Donate
+                  <Image
+                    src="/chevron-right 2.svg"
+                    alt="Donate Icon"
+                    width={20}
+                    height={20}
+                  />
+                </button>
+              </div>
             </div>
           </div>
 
